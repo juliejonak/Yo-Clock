@@ -2,6 +2,14 @@
 
 //Create new div on existing body element
 
+
+//Delay popup on load
+window.addEventListener('load', function(){
+    this.setTimeout(function(){
+        popup.style.display = 'flex'
+    }, 4000);
+});
+
 const head = document.querySelector('head');
 const fontSet = document.createElement('link');
 fontSet.setAttribute('href', 'https://fonts.googleapis.com/css?family=Kanit:400,600');
@@ -12,7 +20,7 @@ const parent = document.querySelector('body');
 const popup = document.createElement('div');
 parent.prepend(popup);
 popup.classList.add('popup');
-popup.style = 'display: flex; justify-content: space-between; align-items: center; background-color: white; z-index: 10; height: 300px; width: 60%; border: 2px solid #41494E; margin: 0 auto; margin-top: 10%; border-radius: 8px; font-family: `Kanit`, sans-serif;';
+popup.style = 'display: flex; justify-content: space-between; align-items: center; background-color: white; z-index: 10; height: 34vh; width: 60%; border: 2px solid #41494E; margin: 0 auto; margin-top: 10%; border-radius: 8px; font-family: `Kanit`, sans-serif;';
 
 //Create image div within popup
 const image = document.createElement('div');
@@ -36,7 +44,7 @@ textBox.classList.add('text-box');
 const titleOne = document.createElement('h2');
 titleOne.style.fontFamily = 'Kanit, sans-serif;'
 titleOne.style = 'font-size: 32px; font-weight: 600; color: #FF5C00; letter-spacing: 2.6px; line-height: 40px;';
-titleOne.innerHTML = 'Do you want to <br> Set Yo Clock?';
+titleOne.innerHTML = 'Do you want to Set Yo Clock?';
 textBox.appendChild(titleOne);
 
 //Buttons box within textBox
@@ -49,7 +57,7 @@ buttons.classList.add('buttons');
 
 //Create button one div
 const buttonOne = document.createElement('div');
-buttonOne.style = 'width: 40%; height: 40px; display: flex; align-items: center; justify-content: center; background-color: #FF5C00; cursor: pointer; border-radius: 4px; align-self: flex-end; margin-right: 15%;';
+buttonOne.style = 'width: 65%; height: 40px; display: flex; align-items: center; justify-content: center; background-color: #FF5C00; cursor: pointer; border-radius: 4px; align-self: flex-end; margin-right: 5%;';
 buttons.appendChild(buttonOne);
 buttonOne.classList.add('button');
 buttonOne.classList.add('yes');
@@ -57,7 +65,7 @@ buttonOne.classList.add('yes');
 //Create h3 in button
 const buttonTextOne = document.createElement('h3');
 buttonTextOne.style = 'color: white; font-family: `Kanit`, sans-serif; font-size: 21px; font-weight: 600; letter-spacing: 2.6px;';
-buttonTextOne.innerHTML = 'Yes!';
+buttonTextOne.innerHTML = 'Hell yeah!';
 buttonOne.appendChild(buttonTextOne);
 
 //Hover capability
@@ -73,15 +81,15 @@ buttonOne.addEventListener('mouseleave', function(){
 
 //Create button div
 const buttonTwo = document.createElement('div');
-buttonTwo.style = 'width: 30%; height: 40px; display: flex; align-items: center; justify-content: center; background-color: rgb(70, 66, 82); cursor: pointer; border-radius: 4px; align-self: flex-end; margin-right: 15%;';
+buttonTwo.style = 'width: 28%; height: 40px; display: flex; align-items: center; justify-content: center; background-color: rgb(70, 66, 82); cursor: pointer; border-radius: 4px; align-self: flex-end; margin-right: 15%;';
 buttons.appendChild(buttonTwo);
 buttonTwo.classList.add('button');
-buttonTwo.classList.add('yes');
+buttonTwo.classList.add('no');
 
 //Create h3 in button
 const buttonTextTwo = document.createElement('h3');
 buttonTextTwo.style = 'color: white; font-family: `Kanit`, sans-serif; font-size: 18px; font-weight: 600; letter-spacing: 2.6px;';
-buttonTextTwo.innerHTML = 'No';
+buttonTextTwo.innerHTML = 'Naw';
 buttonTwo.appendChild(buttonTextTwo);
 
 //button Hover functionality 
@@ -97,64 +105,6 @@ buttonTwo.addEventListener('mouseleave', function(){
 
 
 
-//Delay popup on load
-window.addEventListener('load', function(){
-    this.setTimeout(function(){
-        popup.style.display = 'flex'
-    }, 1000);
-});
 
 
 
-
-
-
-
-
-
-//Create time input div
-// const timeBox = document.createElement('div');
-// timeBox.style = 'display: flex; align-items: center; margin-bottom: 10px;';
-// textBox.appendChild(timeBox);
-// timeBox.classList.add('time');
-
-// //Create Label in timeBox
-// const timeLabel = document.createElement('label');
-// timeLabel.setAttribute('for', 'number');
-// timeLabel.innerHTML = 'How much time?';
-// timeLabel.style = 'font-size: 14px; margin-right: 5%;';
-// timeBox.appendChild(timeLabel);
-
-// //Create input in timeBox
-// const timeInput = document.createElement('input');
-// timeInput.setAttribute('id', 'number');
-// timeInput.setAttribute('type', 'number');
-// timeInput.setAttribute('value', '25');
-// timeInput.style = 'width: 25%; font-size: 12px;';
-// timeBox.appendChild(timeInput);
-
-// //Create task input div
-// const taskBox = document.createElement('div');
-// taskBox.style = 'display: flex; flex-direction: column; flex-wrap: wrap;';
-// textBox.appendChild(taskBox);
-// taskBox.classList.add('task');
-
-// //Create task label in taskBox
-// const taskLabel = document.createElement('label');
-// taskLabel.setAttribute('for', 'input');
-// taskLabel.innerHTML = 'What task do you need to accomplish afterwards?';
-// taskLabel.style = 'font-size: 14px; line-height: 17px; margin-bottom: 15px;';
-// taskBox.appendChild(taskLabel);
-
-
-// //Create task text area in taskBox
-// const taskText = document.createElement('textarea');
-// taskText.setAttribute('id', 'input');
-// taskText.setAttribute('name', 'userInput');
-// taskText.setAttribute('rows', '4');
-// taskText.setAttribute('cols', '5');
-// taskText.setAttribute('maxlength', '200');
-// taskText.setAttribute('wrap', 'hard');
-// taskText.setAttribute('placeholder', 'Walk Mr. Chewbarka');
-// taskText.style = 'width: 80%; font-size: 13px; padding-top: 5px; padding-left: 3%;';
-// taskBox.appendChild(taskText);
