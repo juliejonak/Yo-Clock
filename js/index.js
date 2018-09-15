@@ -1,2 +1,6 @@
 
-//go button event listener
+
+let timerStart = document.querySelector('.button');
+
+timerStart.addEventListener('click', ()=>{setAlarm()});
+
