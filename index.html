@@ -16,7 +16,18 @@
 		<div class="popup-box cards">
 
 			<div class="image">
-				<img class="random" src="./img/Flava Flav/3.jpg">
+				<script type="text/javascript">
+					var imageArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+					function loadRandomImage(imageArray) {
+						let num = Math.floor(Math.random() * imageArray.length);
+						let img = imageArray[num];
+						let imgStr = `<img src="img/Flava Flav/${img}.jpg" alt="">`;
+						document.write(imgStr); document.close();
+					};
+
+					loadRandomImage(imageArray);
+				</script>
 			</div>
 
 			<div class="text-box">
@@ -41,6 +52,6 @@
 		</div> <!--popup-box-->
 	</div><!--background-->
 </body>
-<script src="js/index.js"></script>
 <!-- <script src="js/popup.js"></script> -->
+<script src="js/index.js"></script>
 </html>
