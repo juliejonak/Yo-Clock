@@ -6,8 +6,8 @@
 //Delay popup on load
 window.addEventListener('load', function(){
     this.setTimeout(function(){
-        popup.style.display = 'flex'
-    }, 4000);
+        popup.style = 'display: flex; justify-content: space-between; align-items: center; background-color: white; z-index: 10; height: 34vh; width: 60%; border: 2px solid #41494E; margin: 0 auto; margin-top: 10%; border-radius: 8px; font-family: `Kanit`, sans-serif;'
+    }, 1000);
 });
 
 const head = document.querySelector('head');
@@ -20,7 +20,7 @@ const parent = document.querySelector('body');
 const popup = document.createElement('div');
 parent.prepend(popup);
 popup.classList.add('popup');
-popup.style = 'display: flex; justify-content: space-between; align-items: center; background-color: white; z-index: 10; height: 34vh; width: 60%; border: 2px solid #41494E; margin: 0 auto; margin-top: 10%; border-radius: 8px; font-family: `Kanit`, sans-serif;';
+popup.style = 'display: none; justify-content: space-between; align-items: center; background-color: white; z-index: 10; height: 34vh; width: 60%; border: 2px solid #41494E; margin: 0 auto; margin-top: 10%; border-radius: 8px; font-family: `Kanit`, sans-serif;';
 
 //Create image div within popup
 const image = document.createElement('div');
@@ -107,4 +107,12 @@ buttonTwo.addEventListener('mouseleave', function(){
 
 
 
+// buttonOne.addEventListener('click', function(){
+//     OPEN NEW TAB;
+// })
 
+
+
+buttonTwo.addEventListener('click', function(){
+    popup.style = 'display: none;';
+})
