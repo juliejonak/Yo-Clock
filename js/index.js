@@ -16,4 +16,15 @@ button.addEventListener('click', ()=>{
 
 
 
+var imageArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+window.addEventListener('load', function(){
+    const imageDiv = document.querySelector('.image');
+    const randomImg = document.createElement('img');
+    let num = Math.floor(Math.random() * imageArray.length);
+    let img = imageArray[num];
+    let imgStr = `img/Flava Flav/${img}.jpg`;
+    randomImg.setAttribute('src', `${imgStr}`);
+    imageDiv.appendChild(randomImg);
+});
 
