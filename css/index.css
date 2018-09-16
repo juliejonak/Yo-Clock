@@ -183,10 +183,22 @@ body {
   border: 2px solid #41494E;
   margin-top: 10%;
   border-radius: 8px;
+  max-width: 900px;
 }
 @media only screen and (max-width: 839px) {
   .popup-box {
     height: 50vh;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .popup-box {
+    height: 44vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .popup-box {
+    width: 93%;
+    height: 40vh;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -196,16 +208,25 @@ body {
     font-size: 3.4000000000000004rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .popup-box {
+    height: 36vh;
+  }
+}
 .image {
   width: 50%;
   height: auto;
   overflow: hidden;
   padding-left: 3%;
+  max-width: 90%;
+  max-height: 90%;
 }
 img {
   width: 100%;
   height: auto;
   border-radius: 4px;
+  max-width: 90%;
+  max-height: 90%;
 }
 .top-section {
   display: flex;
@@ -223,6 +244,8 @@ img {
   flex-flow: column wrap;
   justify-content: space-evenly;
   align-self: flex-start;
+  max-width: 90%;
+  max-height: 90%;
 }
 .text-box h2 {
   font-size: 40px;
@@ -231,9 +254,17 @@ img {
   color: #FF5C00;
   letter-spacing: 0.1rem;
 }
+@media only screen and (max-width: 600px) {
+  .text-box h2 {
+    font-size: 30px;
+    font-size: 3rem;
+  }
+}
 .time {
   display: flex;
   align-items: center;
+  max-width: 90%;
+  max-height: 90%;
 }
 .time label {
   font-size: 14px;
@@ -248,6 +279,8 @@ img {
 .task {
   display: flex;
   flex-flow: column wrap;
+  max-width: 90%;
+  max-height: 90%;
 }
 .task label {
   font-size: 14px;

@@ -22,28 +22,47 @@
     border: 2px solid #41494E;
     margin-top: 10%;
     border-radius: 8px;
+    max-width: 900px;
 
     @media @tablet {
         height: 50vh;
+    }
+
+    @media @700 {
+        height: 44vh;
+    }
+
+    @media @600 {
+        width: 93%;
+        height: 40vh;
     }
 
     @media @phone {
         height: 55vh;
         .font-size(34);
     }
+
+    @media @400 {
+        height: 36vh;
+    }
 }
+
 
 .image {
     width: 50%;
     height: auto;
     overflow: hidden;
     padding-left: 3%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 img {
     width: 100%;
     height: auto;
     border-radius: 4px;
+    max-width: 90%;
+    max-height: 90%;
 
 }
 
@@ -65,15 +84,23 @@ img {
     flex-flow: column wrap;
     justify-content: space-evenly;
     align-self: flex-start;
+    max-width: 90%;
+    max-height: 90%;
 
     h2 {
         .h2;
+
+        @media @600 {
+            .font-size(30);
+        }
     }
 }
 
 .time {
     display: flex;
     align-items: center;
+    max-width: 90%;
+    max-height: 90%;
 
     label {
         .font-size(14);
@@ -89,6 +116,8 @@ img {
 .task {
     display: flex;
     flex-flow: column wrap;
+    max-width: 90%;
+    max-height: 90%;
 
     label{
         .font-size(14);
