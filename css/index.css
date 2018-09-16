@@ -184,6 +184,7 @@ body {
   margin-top: 10%;
   border-radius: 8px;
   max-width: 900px;
+  min-height: 300px;
 }
 @media only screen and (max-width: 839px) {
   .popup-box {
