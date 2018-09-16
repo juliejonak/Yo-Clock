@@ -13,7 +13,7 @@ window.addEventListener('load', function(){
     let imgStr = `img/Time Reminder Memes/${img}.jpg`;
     randomImg.setAttribute('src', `${imgStr}`);
     imageDiv.appendChild(randomImg);
-    randomImg.style = 'width: 90%; height: auto; border-radius: 4px;';
+    randomImg.style = 'width: 80%; height: auto; border-radius: 4px;';
 });
 
 
