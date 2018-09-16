@@ -20,7 +20,7 @@ const parent = document.querySelector('body');
 const popup = document.createElement('div');
 parent.prepend(popup);
 popup.classList.add('popup');
-popup.style = 'display: none; justify-content: space-between; align-items: center; background-color: white; z-index: 10; height: 34vh; width: 60%; border: 2px solid #41494E; margin: 0 auto; margin-top: 10%; border-radius: 8px; font-family: `Kanit`, sans-serif;';
+popup.style = 'display: none; max-width: 900px; min-height: 400px; justify-content: space-between; align-items: center; background-color: white; z-index: 10; height: 34vh; width: 60%; border: 2px solid #41494E; margin: 0 auto; margin-top: 10%; border-radius: 8px; font-family: `Kanit`, sans-serif;';
 
 //Create image div within popup
 const image = document.createElement('div');
@@ -29,10 +29,10 @@ popup.appendChild(image);
 image.classList.add('image');
 
 //Create img with source within image div
-const img = document.createElement('img');
-img.setAttribute('src', './img/Time Reminder Memes/none of my business.jpg')
-img.style = 'width: 80%; height: auto; border-radius: 4px;';
-image.appendChild(img);
+// const img = document.createElement('img');
+// img.setAttribute('src', './img/Time Reminder Memes/none of my business.jpg')
+// img.style = 'width: 80%; height: auto; border-radius: 4px;';
+// image.appendChild(img);
 
 //Create text box div within popup
 const textBox = document.createElement('div');
@@ -116,3 +116,17 @@ buttonTwo.addEventListener('mouseleave', function(){
 buttonTwo.addEventListener('click', function(){
     popup.style = 'display: none;';
 })
+
+
+var imageArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15',];
+
+window.addEventListener('load', function(){
+    const imageDiv = document.querySelector('.image');
+    const randomImg = document.createElement('img');
+    let num = Math.floor(Math.random() * imageArray.length);
+    let img = imageArray[num];
+    let imgStr = `img/Time Reminder Memes/${img}.jpg`;
+    randomImg.setAttribute('src', `${imgStr}`);
+    imageDiv.appendChild(randomImg);
+    img.style = 'width: 80%; height: auto; border-radius: 4px;';
+});
