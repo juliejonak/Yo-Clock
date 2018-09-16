@@ -262,7 +262,7 @@ img {
   padding-top: 10px;
   padding-left: 3%;
 }
-.button {
+.go-button {
   width: 30%;
   height: 30px;
   display: flex;
@@ -274,16 +274,16 @@ img {
   align-self: flex-end;
   margin-right: 15%;
 }
-.button h3 {
+.go-button h3 {
   font-size: 16px;
   font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
   color: white;
 }
-.button:hover {
+.go-button:hover {
   background-color: #3C91E6;
 }
-.button:hover h3 {
+.go-button:hover h3 {
   color: white;
 }
