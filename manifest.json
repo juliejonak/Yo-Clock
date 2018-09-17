@@ -2,7 +2,7 @@
     "name": "YO Clock",
     "manifest_version": 2,
     "version": "1.0",
-    "description": "YO CLOCK",
+    "description": "YO CLOCK is a time management extension that allows you to set a background timer to remind you to stay focused during your workflow",
   
     "background": {
       "persistent": false,
@@ -14,5 +14,12 @@
     },
     "chrome_url_overrides" : {
         "newtab": "index.html"
-      }
+      },
+
+    "icons" : {
+      "16": "icons/Yo Logo 16",
+      "32": "icons/Yo Logo 32",
+      "48": "icons/Yo Logo 48",
+      "128": "icons/Yo Logo 128"
+    }
 }
