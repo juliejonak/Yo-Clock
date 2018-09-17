@@ -17,9 +17,9 @@
       },
 
     "icons" : {
-      "16": "icons/Yo Logo 16",
-      "32": "icons/Yo Logo 32",
-      "48": "icons/Yo Logo 48",
-      "128": "icons/Yo Logo 128"
+      "16": "icons/Yo clock logo 16.png",
+      "32": "icons/Yo clock logo 32.png",
+      "48": "icons/Yo clock logo 48.png",
+      "128": "icons/Yo clock logo 128.png"
     }
 }
