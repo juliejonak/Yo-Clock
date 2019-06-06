@@ -14,3 +14,5 @@ YO Clock will appear when you open a new tab. Simply input the number of minutes
 The button will turn green and say, "Timer started!" to indicate that the timer is running in the background. You can navigate to another page - the timer will still run.
 
 YO Clock will also open a new tab when you've been on a page for more than 10 minutes, to give you the option to set a timer (in case you fell victim to Youtube or Reddit...once again...). If you don't want set one, simply close the tab.
+
+Download YO CLOCK here: https://chrome.google.com/webstore/detail/yo-clock/pnepmipofgeonhcliddmmmgccfeigonc?hl=en-US
